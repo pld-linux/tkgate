@@ -1,7 +1,7 @@
 Summary:	Digital circuits simulator
 Summary(pl):	Symulator obwodów cyfrowych
 Name:		tkgate
-Version:	1.3b
+Version:	1.6i
 Release:	1
 Group:		X11/Applications
 License:	GPL
@@ -65,9 +65,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}-%{version}/examples
 %dir %{_libdir}/%{name}-%{version}/libexec
 %attr(755,root,root) %{_libdir}/%{name}-%{version}/libexec/*
+%{_libdir}/%{name}-%{version}/gdf
 %{_libdir}/%{name}-%{version}/scripts
-%{_libdir}/%{name}-%{version}/README
-%{_libdir}/%{name}-%{version}/gate.lib
 %{_libdir}/%{name}-%{version}/messages*
 %{_libdir}/%{name}-%{version}/sitename.txt
 %{_mandir}/*/*
+%doc README COPYING
