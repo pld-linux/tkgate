@@ -4,8 +4,6 @@ Name:		tkgate
 Version:	1.3b
 Release:	1
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(pl):	X11/Aplikacje
 License:	GPL
 Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
 Patch0:		%{name}-config.patch
