@@ -51,7 +51,6 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install install.man \
 	DESTDIR="$RPM_BUILD_ROOT"
 
-gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
-%doc *.gz
+%doc README
 %dir %{_libdir}/%{name}-%{version}
 %{_libdir}/%{name}-%{version}/bitmaps
 %{_libdir}/%{name}-%{version}/doc
