@@ -25,7 +25,7 @@ example circuits include a simple CPU, programmed to run the Animals
 game.
 
 %description -l pl
-TkGate jest sterowanym zda¿eniami symulatorem obwodów cyfrowych z
+TkGate jest sterowanym zdarzeniami symulatorem obwodów cyfrowych z
 graficznym interfejsem opartym o Tcl/Tk. TkGate pozwala korzystaæ z
 du¿ego zestawu podstawowych elementów jak równie¿ z definiowanych
 przez u¿ytkownika modu³ów. Dystrybucja zawiera zestaw tutoriali i
