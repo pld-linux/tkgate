@@ -2,13 +2,13 @@ Summary:	Digital circuits simulator
 Summary(pl):	Symulator obwodów cyfrowych
 Name:		tkgate
 Version:	1.6i
-Release:	1
-Group:		X11/Applications
+Release:	2
+Group:		X11/Applications/Science
 License:	GPL
 Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
 Patch0:		%{name}-config.patch
-BuildRequires:	tk-devel
 BuildRequires:	tcl-devel
+BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -50,7 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install install.man \
 	DESTDIR="$RPM_BUILD_ROOT"
-
 
 %clean
 rm -rf $RPM_BUILD_ROOT
