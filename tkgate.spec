@@ -59,6 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
+%doc *.gz
 %dir %{_libdir}/%{name}-%{version}
 %{_libdir}/%{name}-%{version}/bitmaps
 %{_libdir}/%{name}-%{version}/doc
@@ -70,4 +71,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{name}-%{version}/messages*
 %{_libdir}/%{name}-%{version}/sitename.txt
 %{_mandir}/*/*
-%doc README COPYING
