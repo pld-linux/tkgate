@@ -8,11 +8,10 @@ License:	GPL
 Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
 # Source0-md5:	3083c082ee462a69c64507fc67a86552
 Patch0:		%{name}-config.patch
+URL:		http://www.tkgate.org/
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
-URL:		http://www.tkgate.org/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
 
 %description
 TkGate is an event driven digital circuit simulator with a
@@ -24,16 +23,16 @@ example circuits include a simple CPU, programmed to run the Animals
 game.
 
 %description -l pl
-TkGate jest sterowanym zda¿eniami symulatorem obwodów cyforwych z
+TkGate jest sterowanym zda¿eniami symulatorem obwodów cyfrowych z
 graficznym interfejsem opartym o Tcl/Tk. TkGate pozwala korzystaæ z
-du¿ego zestawu podstawowych elementów jak tównie¿ z definiowanych
+du¿ego zestawu podstawowych elementów jak równie¿ z definiowanych
 przez u¿ytkownika modu³ów. Dystrybucja zawiera zestaw tutoriali i
 przyk³adowych obwodów, które mog± zostaæ za³adowane poprzez menu
 "Help". W¶ród nich znajduje siê prosty procesor zaprogramowany do gry
 w "Animals".
 
 %prep
-%setup  -q
+%setup -q
 %patch0 -p1
 
 %build
@@ -43,7 +42,8 @@ CXXDEBUGFLAGS="%{rpmcflags}" ; export CXXDEBUGFLAGS
 # This is NOT a GNU Configure.
 ./configure
 
-%{__make} OPT_FLAGS="%{rpmcflags}"
+%{__make} \
+	OPT_FLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
