@@ -6,6 +6,7 @@ Release:	2
 Group:		X11/Applications/Science
 License:	GPL
 Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
+# Source0-md5:	75c38151392f7eba702a96f40ca64d3d
 Patch0:		%{name}-config.patch
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
