@@ -41,7 +41,7 @@ LDFLAGS="%{rpmldflags}" ; export LDFLAGS
 CXXDEBUGFLAGS="%{rpmcflags}" ; export CXXDEBUGFLAGS
 
 # This is NOT a GNU Configure.
-./configure 
+./configure
 
 %{__make} OPT_FLAGS="%{rpmcflags}"
 
