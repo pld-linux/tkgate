@@ -9,6 +9,8 @@ Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
 # Source0-md5:	3083c082ee462a69c64507fc67a86552
 Patch0:		%{name}-config.patch
 URL:		http://www.tkgate.org/
+BuildRequires:	flex
+BuildRequires:	bison
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
