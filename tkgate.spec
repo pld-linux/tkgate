@@ -12,6 +12,8 @@ BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
+%define		_prefix		/usr/X11R6
+%define		_mandir		%{_prefix}/man
 
 %description
 TkGate is an event driven digital circuit simulator with a
