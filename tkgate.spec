@@ -42,12 +42,12 @@ export CXXDEBUGFLAGS="$RPM_OPT_FLAGS"
 # This is NOT a GNU Configure.
 ./configure 
 
-make OPT_FLAGS="$RPM_OPT_FLAGS"
+%{__make} OPT_FLAGS="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install install.man \
+%{__make} install install.man \
 	DESTDIR="$RPM_BUILD_ROOT"
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man*/* \
