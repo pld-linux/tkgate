@@ -1,0 +1,42 @@
+--- tkgate-1.8.6/Imakefile.old	2004-06-09 19:16:06.000000000 +0200
++++ tkgate-1.8.6/Imakefile	2005-11-11 17:59:36.000000000 +0100
+@@ -99,4 +99,4 @@
+ 	@echo "All files from ${HOMEDIR}"
+ 
+ install::
+-	cp -r locale ${HOMEDIR}
++	cp -r locale $(DESTDIR)${HOMEDIR}
+--- tkgate-1.8.6/config.h.orig	2005-11-11 18:01:30.000000000 +0100
++++ tkgate-1.8.6/config.h	2005-11-11 18:09:31.000000000 +0100
+@@ -79,19 +79,19 @@
+   version number to this path.  You can override the default by
+   uncommenting the defintion of TKGATE_HOMEDIR below.
+  */
+-#define TKGATE_HOMEDIRBASE	"/usr/X11R6/lib"
++#define TKGATE_HOMEDIRBASE	"/usr/lib"
+ 
+ /*
+   The location of the tkgate and gmac executables.  If you change this, you will
+   need to run the configure script again.
+  */
+-#define TKGATE_BINDIR		/usr/X11R6/bin
++#define TKGATE_BINDIR		/usr/bin
+ 
+ /*
+   The location of the tkgate and gmac man pages.  If you change this, you will
+   need to run the configure script again.
+  */
+-#define TKGATE_MANDIR		/usr/X11R6/man/man1
++#define TKGATE_MANDIR		/usr/share/man/man1
+ 
+ /*
+   Digital circuit editor and simulator.
+@@ -101,7 +101,7 @@
+ /*
+   URL for local documentation
+  */
+-#define TKGATE_LOCALDOC		"file:/usr/X11R6/lib/tkgate-" TKGATE_VERSION "/doc/index.html"
++#define TKGATE_LOCALDOC		"file:/usr/lib/tkgate-" TKGATE_VERSION "/doc/index.html"
+ 
+ /*
+   The TkGate Copyright message.
