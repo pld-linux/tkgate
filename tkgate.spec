@@ -1,5 +1,5 @@
 Summary:	Digital circuits simulator
-Summary(pl.UTF-8):   Symulator obwodów cyfrowych
+Summary(pl.UTF-8):	Symulator obwodów cyfrowych
 Name:		tkgate
 Version:	1.8.6
 Release:	0.1
