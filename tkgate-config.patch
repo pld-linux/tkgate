@@ -1,5 +1,14 @@
---- tkgate-1.8.4/config.h	2004-06-14 14:26:30.000000000 +0000
-+++ tkgate-1.8.4.new/config.h	2004-06-14 20:38:57.912962224 +0000
+--- tkgate-1.8.7/config.h.orig	2008-06-28 21:19:43.000000000 +0200
++++ tkgate-1.8.7/config.h	2008-06-28 21:20:04.000000000 +0200
+@@ -39,7 +39,7 @@
+ /*
+   Tcl/Tk Version numbers to use.
+ */
+-#define TKGATE_TCLTK_VERSIONS		"8.4 8.3 8.2 8.1 8.0"
++#define TKGATE_TCLTK_VERSIONS		"8.5 8.4 8.3 8.2 8.1 8.0"
+ 
+ /*
+   Japanese Tcl/Tk Version numbers to use.
 @@ -122,8 +122,7 @@
    compile flags to use for gcc.  If you change this, you will
    need to run the configure script again.
