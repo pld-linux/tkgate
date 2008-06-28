@@ -2,7 +2,7 @@ Summary:	Digital circuits simulator
 Summary(pl.UTF-8):	Symulator obwodów cyfrowych
 Name:		tkgate
 Version:	1.8.7
-Release:	0.1
+Release:	0.2
 Group:		X11/Applications/Science
 License:	GPL
 Source0:	ftp://gadoid.ices.cmu.edu/pub/tkgate/%{name}-%{version}.tgz
@@ -14,6 +14,8 @@ BuildRequires:	flex
 BuildRequires:	bison
 BuildRequires:	tcl-devel
 BuildRequires:	tk-devel
+BuildRequires:	xorg-cf-files
+BuildRequires:	xorg-util-gccmakedep
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
